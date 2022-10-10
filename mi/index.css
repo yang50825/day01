@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+
+/* 版心 */
+.w {
+    width: 1226px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.container {
+    height: 40px;
+}
+
+.left {
+    float: left;
+    height: 40px;
+}
+
+.top_nav li {
+    float: left;
+}
+
+.top_nav a {
+    color: #b0b0b0;
+    line-height: 40px;
+    font-size: 12px;
+    /* border-right:1px solid #424242; */
+}
+
+.right {
+    height: 40px;
+    float: right;
+}
+
+.right li {
+    float: left;
+}
+
+.right ul li:nth-child(3) {
+    width: 68px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.right a {
+    color: #b0b0b0;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.sep {
+    color: #424242;
+    font-size: 12px;
+    margin: 0 0.3em;
+}
+
+.right ul li:nth-child(4) {
+    width: 120px;
+    background-color: #424242;
+    text-align: center;
+    height: 40px;
+    transition: all 0.2s;
+}
+
+.right ul li:nth-child(4):hover,
+.right ul li:nth-child(4) a:hover {
+    background-color: #fff;
+    color: #ff6700;
+}
+
+.container a {
+    transition: all 0.2s;
+}
+
+.container a:hover {
+    color: #fff;
+}
+
+.milogo {
+    color: #ff6700;
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url('https://s02.mifile.cn/assets/static/image/logo-mi2.png');
+    background-size: 56px;
+}
+
+.header-logo {
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+
+.site-header {
+    width: 100%;
+    height: 100px;
+    /* background-color: #ff6700; */
+}
+
+.nav-list {
+    padding: 12px 0 0 30px;
+}
+
+.header-nav li {
+    float: left;
+    padding: 26px 10px 38px;
+}
+
+.header-nav li a {
+    transition: color 0.2s;
+    color: #333;
+    font-size: 16px;
+}
+
+.header-nav li a:hover {
+    color: #ff6700;
+}
+
+.nav-category {
+    position: relative;
+    width: 127px;
+    padding-right: 15px;
+}
+
+.header-search {
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin-top: 15px;
+    position: relative;
+    border: 1px solid #e0e0e0;
+}
+
+.header-search:active,
+.header-search-input:root {
+    border: 1px solid #ff6700;
+}
+
+.header-search-input:focus {
+    border-right: 1px solid #ff6700;
+}
+
+.header-search-input {
+    border: 0;
+    border-right: 1px solid #e0e0e0;
+    outline: 0;
+    transition: all 0.2s;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    z-index: 1;
+    width: 238px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.sousuo {
+    float: right;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sousuo:hover {
+    color: #fff;
+    background-color: #ff6700;
+}
+
+
+/* 中部 */
+.home {
+    width: 100%;
+}
+
+.site-category {
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+    float: left;
+}
+
+.categoryList {
+    height: 420px;
+    color: #fff;
+    background: rgba(105, 101, 101, .6);
+    padding: 20px 0;
+}
+
+.categoryList li {
+    cursor: pointer;
+}
+
+.categoryList li:hover {
+    background-color: #ff6700;
+}
+
+.categoryList li a {
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.site-img {
+    float: left;
+    width: 992px;
+    position: relative;
+}
+
+.site-img img {
+    width: 992px;
+    height: 460px;
+}
+
+.btnList {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+}
+
+.btnList li {
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    float: left;
+    border-radius: 50%;
+    margin: 0 4px;
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnList li:hover {
+    background-color: hsla(0, 0%, 100%, .4);
+}
+
+.icon-right {
+    float: right;
+    margin-right: 20px;
+}

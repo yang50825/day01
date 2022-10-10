@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1、模板字符串
+      let name = '张三'
+      let sayHello = `我叫${name}`
+      console.log(sayHello)
+
+      let result = {
+        name: name,
+        age: 20,
+        sex: 'male',
+      }
+
+      let html = `
+        <div>
+            <span>${result.name}</span>
+            <span>${result.age}</span>
+            <span>${result.sex}</span>
+        </div>
+      `
+      console.log(html)
+
+      // startsWith和endsWith
+
+      // repeat()
+      console.log('hi'.repeat(10))
+    </script>
+  </body>
+</html>
