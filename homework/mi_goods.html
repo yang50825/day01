@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .box {
+        width: 1226px;
+        margin: 0 auto;
+      }
+
+      .box-top {
+        position: relative;
+      }
+
+      .title {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 200;
+        line-height: 58px;
+        color: #333;
+      }
+
+      .more {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .tabs li {
+        float: left;
+        margin: 0 0 0 30px;
+        font-size: 16px;
+        line-height: 58px;
+      }
+
+      .tabs li a {
+        color: #424242;
+        padding: 2px;
+      }
+
+      .box-content {
+        width: 233px;
+        height: 300px;
+        float: left;
+        margin: 0 10px 10px 0;
+        border: 1px solid #f5f5f5;
+      }
+
+      .box-content-img {
+        width: 234px;
+        height: 300px;
+      }
+
+      .box-img,
+      .box-img img {
+        width: 160px;
+        height: 160px;
+      }
+
+      .box-img {
+        margin: 0 auto 18px;
+      }
+
+      .box-title {
+        margin: 0 10px 2px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+
+      .box-desc {
+        margin: 0 10px 10px;
+        height: 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #b0b0b0;
+        overflow: hidden;
+      }
+
+      .box-price {
+        margin: 0 10px 14px;
+        text-align: center;
+        color: #ff6700;
+        font-size: 14px;
+      }
+
+      .box-content .box-history {
+        color: #b0b0b0;
+        text-decoration: line-through;
+      }
+
+      .box-more {
+        width: 233px;
+        height: 143px;
+        float: left;
+        position: relative;
+        border: 1px solid #f5f5f5;
+        margin-bottom: 10px;
+      }
+
+      .box-more-img {
+        position: absolute;
+        right: 20px;
+        top: 32px;
+      }
+
+      .box-more-img img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .box-more-title {
+        margin: 45px 110px 5px 35px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+      }
+      .box-more-price {
+        color: #ff6700;
+        font-size: 14px;
+        margin: 0 110px 0 35px;
+      }
+
+      .box,
+      .box-top,
+      .box-content-total,
+      .box-content,
+      .box-img,
+      .box-title,
+      .box-desc,
+      .box-num,
+      .box-price span,
+      .box-price,
+      .box-more,
+      .box-more-title,
+      .box-more-img,
+      .box-more-price,
+      .box-more-price span {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-top">
+        <h2 class="title">智能家居</h2>
+        <div class="more">
+          <ul class="tabs">
+            <li>
+              <a
+                style="color: #ff6700; border-bottom: 2px solid #ff6700"
+                href="#"
+                >小爱音箱</a
+              >
+            </li>
+            <li><a href="#">门锁</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">智能设备</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="box-content-total">
+        <div class="box-content">
+          <a href="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec383d223d9f38f442268df684c526f6.png?thumb=1&w=351&h=450&f=webp&q=90"
+              class="box-content-img"
+            />
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202204191820_88e1f0fded3b4f05c5bdecf433a868cf.png?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">Xiaomi智能家庭屏 10</h3>
+            <p class="box-desc">
+              MIUI Home｜10.1" 高清大屏｜115°超广角摄像头｜儿童模式｜家庭
+              KTV｜小爱同学
+            </p>
+            <p class="box-price"><span class="box-num">999</span>元</p>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/adce4500b997efaf6e3ff8e8150215f4.jpg?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">小米小爱音箱Play 增强版</h3>
+            <p class="box-desc">LED时钟显示，语音控制传统家电</p>
+            <p class="box-price">
+              <span class="box-num">129</span>元&nbsp;
+              <span class="box-num box-history">149</span
+              ><span class="box-history">元</span>
+            </p>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/4d73fad85fb9f683109834a882ba15a6.jpg?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">Xiaomi Sound</h3>
+            <p class="box-desc">HARMAN工程师专业调音，高保真震撼音质</p>
+            <p class="box-price">
+              <span class="box-num">449</span>元&nbsp;
+              <span class="box-num box-history">499</span
+              ><span class="box-history">元</span>
+            </p>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e7c6e79433c883e1a022ec21402c1679.jpg?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">小米小爱音箱 Play</h3>
+            <p class="box-desc">听音乐、语音遥控家电</p>
+            <p class="box-price">
+              <span class="box-num">99</span>元&nbsp;
+              <span class="box-num box-history">109</span
+              ><span class="box-history">元</span>
+            </p>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb9761c5b49e21b4d5aa03e7ddaf1a09.png?thumb=1&w=351&h=450&f=webp&q=90"
+              class="box-content-img"
+            />
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8b619d27877bbc497468c673a317a847.jpg?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">小米小爱音箱 Pro</h3>
+            <p class="box-desc">澎湃低音，语音遥控传统家电</p>
+            <p class="box-price">
+              <span class="box-num">279</span>元&nbsp;
+              <span class="box-num box-history">299</span
+              ><span class="box-history">元</span>
+            </p>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/86c3f61639ae6a2a9a205a463d338ed2.jpg?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">小米AI音箱（第二代）</h3>
+            <p class="box-desc">低频饱满有深度，人声清晰有细节</p>
+            <p class="box-price">
+              <span class="box-num">189</span>元&nbsp;
+              <span class="box-num box-history">199</span
+              ><span class="box-history">元</span>
+            </p>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="#">
+            <div class="box-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9946e252a7c49662376c056ced004a20.jpg?thumb=1&w=300&h=300&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-title">小米小爱触屏音箱</h3>
+            <p class="box-desc">可视化智能家居，海量视听资源</p>
+            <p class="box-price">
+              <span class="box-num">249</span>元&nbsp;
+              <span class="box-num box-history">269</span
+              ><span class="box-history">元</span>
+            </p>
+          </a>
+        </div>
+        <div class="box-more">
+          <a href="#">
+            <div class="box-more-img">
+              <img
+                src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e13900c094ae4ac4eb53b35f2d0c95b0.jpg?thumb=1&w=150&h=150&f=webp&q=90"
+              />
+            </div>
+            <h3 class="box-more-title">小米小爱音箱</h3>
+            <p class="box-more-price">
+              <span class="box-num">209</span>
+              元
+            </p>
+          </a>
+        </div>
+        <div class="box-more">
+          <a href="#">
+            <div class="box-more-img">
+              <img
+                src="./img/Snipaste_2022-10-09_22-13-56.png"
+                style="width: 48px; height: 48px"
+              />
+            </div>
+            <h3 class="box-more-title" style="font-size: 18px">浏览更多</h3>
+            <p class="box-more-price" style="color: #333">小爱音箱</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

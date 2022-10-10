@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1、全局作用域： 作用于所有代码执行的环境
+      var a = 10 // 全局变量
+      console.log(a)
+      //   2、局部作用域：作用域函数内的代码环境
+      function fn() {
+        var b = 20
+        console.log(b)
+      }
+
+      fn()
+      //   console.log(b)
+      //   3、在ES6之前，js没有块级作用域，在花括号中声明的变量是全局中都可以调用的
+      if (true) {
+        var c = 30
+        d = 50
+      }
+      console.log(c)
+
+      //   4、在特殊情况下，不使用var声明的变量是全局变量
+      console.log(d)
+
+      //   案例1
+      function f1() {
+        var num = 123
+        function f2() {
+          console.log(num)
+        }
+        f2()
+      }
+      var num = 456
+      f1()
+
+      //   案例2
+      var a = 1
+      function fn1() {
+        var a = 2
+        var b = '22'
+        fn2()
+        function fn2() {
+          var a = 3
+          fn3()
+          function fn3() {
+            var a = 4
+            console.log(a)
+            console.log(b)
+          }
+        }
+      }
+      fn1()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      a {
+        font-style: none;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .box {
+        width: 360px;
+        height: 460px;
+        background-color: #fff;
+        border: 1px solid #ffffff;
+        transition: all 0.2s linear;
+      }
+
+      .box:hover {
+        z-index: 2;
+        /*设置在顶层显示*/
+        -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        /*添加阴影*/
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        -webkit-transform: translate3d(0, -2px, 0);
+        /*向上浮动*/
+        transform: translate3d(0, -2px, 0);
+      }
+
+      .box_img {
+        margin: 0 30px;
+        background-color: #ffffff;
+      }
+
+      .box_img img {
+        background-color: #ffffff;
+      }
+
+      .box_name {
+        background-color: #fff;
+      }
+
+      .box_name h3 {
+        text-align: center;
+        color: #333;
+        margin: 0 10px 2px;
+        font-weight: 400;
+        background-color: #ffffff;
+        font-size: 14px;
+      }
+
+      .box_info {
+        color: #b0b0b0;
+        text-align: center;
+        margin: 0 10px 10px;
+        font-size: 12px;
+        height: 18px;
+        background-color: #ffffff;
+      }
+
+      .box_price {
+        color: #ff6700;
+        background-color: #ffffff;
+        text-align: center;
+        margin: 0 10px 10px;
+      }
+
+      .box_price .price_num {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box_img">
+        <img
+          src="https://cdn.cnbj1.fds.api.mi-img.com/nr-pub/202209261921_a1b840c267bd26bcf4dc654d52f259e5.png?thumb=1&w=300&h=300&f=webp&q=90"
+          alt="Xiaomi Civi 2"
+        />
+      </div>
+      <div class="box_name">
+        <h3>Xiaomi Civi 2</h3>
+      </div>
+      <div class="box_info">仿生双眸｜氛围人像</div>
+      <div class="box_price"><span class="price_num">2399</span>元起</div>
+    </div>
+  </body>
+</html>

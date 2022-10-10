@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const fn = (a, ...args) => {
+        //     console.log(a);
+        //     console.log(args);
+        // }
+        // // 不确定参数个数，可以用... 代替，会存入到一个数组中
+        // fn(1, 3, 5, 7, 9)
+        // // 展开数组
+        // let arr = [1, 3, 5, 7, 9];
+        // console.log(...arr);
+        // let arr2 = [2, 4, 6, 8, 10];
+        // let arr3 = [...arr, ...arr2]
+        // console.log(...arr3);
+        // arr.push(...arr2);
+        // console.log(...arr);
+        let arrayLike = {
+            '0': 'a',
+            '1': 'b',
+            '2': 'c',
+            length: 3
+        };
+        let arr4 = Array.from(arrayLike);
+        console.log(arr4);
+    </script>
+</body>
+
+</html>

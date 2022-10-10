@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            background: #f5f5f5;
+        }
+
+        /* 消除所有a标签下划线 */
+        a {
+            text-decoration: none;
+        }
+
+        /* 消除所有li标签黑点 */
+        ul {
+            list-style: none;
+        }
+
+
+        /* 总容器 */
+        .container {
+            width: 1226px;
+            margin: 0 auto;
+        }
+
+        /* 父元素相对定位 */
+        .box-hd {
+            position: relative;
+        }
+
+        /* 子元素绝对定位 */
+        .container .more {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 58px;
+            -webkit-font-smoothing: antialiased;
+            /* float: right; */
+        }
+
+        /* 类型栏 */
+        .box-hd .title {
+            margin: 0;
+            font-size: 22px;
+            font-weight: 200;
+            line-height: 58px;
+            color: #333;
+            /* float: left; */
+        }
+
+        /* 查看更多 */
+        .more-link {
+            font-size: 16px;
+            line-height: 58px;
+            color: #424242;
+            -webkit-transition: all .4s;
+            transition: all .4s;
+        }
+
+
+        /* 查看更多标签hover */
+        .more-link:hover {
+            color: #ff6700;
+        }
+
+
+        /* 单独大图 */
+        .span4 {
+            width: 248px;
+            height: 614px;
+        }
+
+        .span4 img {
+            width: 234px;
+            height: 614px;
+            -webkit-transition: all .2s linear;
+            /*渐变效果*/
+            transition: all .2s linear;
+        }
+
+        .span4 img:hover {
+            z-index: 2;
+            /*设置在顶层显示*/
+            -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            /*添加阴影*/
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            -webkit-transform: translate3d(0, -2px, 0);
+            /*向上浮动*/
+            transform: translate3d(0, -2px, 0);
+        }
+
+        .figure-img {
+            background: #ffffff;
+        }
+
+        .figure-img img {
+            width: 160px;
+            height: 160px;
+            aspect-ratio: auto 160 / 160;
+            background: #ffffff;
+            margin: 0 37px 0 37px;
+        }
+
+        /* 商品样式 */
+        .container .brick-list li {
+            width: 234px;
+            height: 260px;
+            float: left;
+            padding: 20px 0;
+            background: #ffffff;
+            margin: 0 0 8px 8px;
+            border: 1px solid transparent;
+            -webkit-transition: all .2s linear;
+            /*渐变效果*/
+            transition: all .2s linear;
+        }
+
+        /* 商品鼠标移动效果 */
+        .container .brick-list li:hover {
+            /* transform: translateY(-3px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+
+            z-index: 2;
+            /*设置在顶层显示*/
+            -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            /*添加阴影*/
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            -webkit-transform: translate3d(0, -2px, 0);
+            /*向上浮动*/
+            transform: translate3d(0, -2px, 0);
+        }
+
+        /* 手机名 */
+        .brick-list li .title {
+            margin: 0 10px 2px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 0 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            background: #ffffff;
+        }
+
+        /* 手机描述 */
+        .brick-list li .desc {
+            margin: 0 10px 10px;
+            height: 18px;
+            font-size: 12px;
+            color: #b0b0b0;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            background: #ffffff;
+        }
+
+        .container .box .span4 {
+            float: left;
+        }
+
+        /* 手机价格行 */
+        .brick-list li .price {
+            margin: 0 10px 14px;
+            margin: 0 10px 10px;
+            text-align: center;
+            color: #ff6700;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-size: 14px;
+            background: #ffffff;
+        }
+
+        /* 价格 */
+        .brick-list li .price span {
+            background: #ffffff;
+        }
+
+        /* 历史价格 */
+        .brick-list li .price del {
+            margin-left: 0.5em;
+            color: #b0b0b0;
+            /* text-decoration: line-through; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-hd">
+            <h2 class="title">手机</h2>
+            <div class="more">
+                <a class="more-link" href="#" class="more-link">查看更多 ></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="span4">
+                <a href="#">
+                    <img src="img/fef86f3a976842446ec7c3f315cf253f.webp" />
+                </a>
+            </div>
+            <ul class="brick-list">
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/a687e796bb4879cd0e93867177f800da.webp" />
+                        </div>
+                        <h3 class="title">Xiaomi MIX Fold 2</h3>
+                        <p class="desc">超轻薄折叠机身设计，小米自研微水滴形态转轴</p>
+                        <p class="price">
+                            <span class="num">8999</span>元<span>起</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/202208101511_488638d8f8d5dbcf3b66cd82703ecfb9.webp" />
+                        </div>
+                        <h3 class="title">
+                            Redmi K50 至尊版
+                        </h3>
+                        <p class="desc">骁龙8+ ｜1.5K 高清直屏</p>
+                        <p class="price">
+                            <span class="num">2999</span>元<span>起</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/202207011810_86ad513472d1423a3fdec8d7d5107038.webp" />
+                        </div>
+                        <h3 class="title">
+                            Xiaomi 12S Ultra
+                        </h3>
+                        <p class="desc">这真徕卡｜专业徕卡影像</p>
+                        <p class="price">
+                            <span class="num">5999</span>元<span>起</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/202207012000_0b9df066c110f201154013ac373df1d9.webp" />
+                        </div>
+                        <h3 class="title">
+                            Xiaomi 12S Pro
+                        </h3>
+                        <p class="desc">骁龙8+ 旗舰处理器 | 徕卡影像</p>
+                        <p class="price">
+                            <span class="num">4699</span>元<span>起</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/202207012022_19bbddb6b35c3828f8b53f450c1519a3.webp" />
+                        </div>
+                        <h3 class="title">
+                            Xiaomi 12S
+                        </h3>
+                        <p class="desc">小尺寸性能旗舰 | 徕卡影像</p>
+                        <p class="price">
+                            <span class="num">3999</span>元<span>起</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/202207011841_084ed41d67f248677914605b73faf582.webp" />
+                        </div>
+                        <h3 class="title">
+                            Xiaomi 12 Pro 天玑版
+                        </h3>
+                        <p class="desc">全球首发天玑9000+｜叶脉冷泵散热系统｜2K AMOLED 超视感屏 ｜5000万疾速影像</p>
+                        <p class="price">
+                            <span class="num">3999</span>元<span>起</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/211bb83776a8e0c8358732c3f3aa2864.webp" />
+                        </div>
+                        <h3 class="title">
+                            Redmi Note 11T Pro+
+                        </h3>
+                        <p class="desc">天玑8100｜真旗舰芯</p>
+                        <p class="price">
+                            <span class="num">1999</span>元<span>起</span>
+                            <del>
+                                <span class="num">2099</span>元
+                            </del>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="figure-img">
+                            <img src="img/5713971c4bb6512743dfd06023080268.webp" />
+                        </div>
+                        <h3 class="title">
+                            Redmi Note 11T Pro
+                        </h3>
+                        <p class="desc">天玑8100｜真旗舰芯</p>
+                        <p class="price">
+                            <span class="num">1599</span>元<span>起</span>
+                            <del>
+                                <span class="num">1799</span>元
+                            </del>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
