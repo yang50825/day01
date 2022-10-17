@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 3696447 */
-  src: url('iconfont.woff2?t=1665632620499') format('woff2'),
-       url('iconfont.woff?t=1665632620499') format('woff'),
-       url('iconfont.ttf?t=1665632620499') format('truetype');
+  src: url('iconfont.woff2?t=1665926352923') format('woff2'),
+       url('iconfont.woff?t=1665926352923') format('woff'),
+       url('iconfont.ttf?t=1665926352923') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,18 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tick:before {
+  content: "\e605";
+}
+
+.icon-aixin:before {
+  content: "\e8ab";
+}
+
+.icon-checkboxweixuanzhongda:before {
+  content: "\e933";
 }
 
 .icon-xiaoxi1:before {

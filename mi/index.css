@@ -24,14 +24,11 @@ li {
     /* background-color: aqua; */
 }
 
-.container {
-    height: 40px;
-}
-
 .left {
     float: left;
     height: 40px;
 }
+
 
 .top_nav li {
     float: left;
@@ -708,9 +705,7 @@ li {
 
 .mi_footer,
 .container,
-.footer_service,
-li,
-a,
+.footer_service li a,
 .col-links,
 .footer_links,
 .col-contact,

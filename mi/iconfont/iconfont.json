@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "3069808",
+      "name": "勾",
+      "font_class": "tick",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "11372639",
+      "name": "爱心",
+      "font_class": "aixin",
+      "unicode": "e8ab",
+      "unicode_decimal": 59563
+    },
+    {
+      "icon_id": "5298548",
+      "name": "checkbox未选中大",
+      "font_class": "checkboxweixuanzhongda",
+      "unicode": "e933",
+      "unicode_decimal": 59699
+    },
+    {
       "icon_id": "604652",
       "name": "消息",
       "font_class": "xiaoxi1",
